@@ -15,56 +15,54 @@
     <h1>Calculator App</h1>
     <form>
         <p>
-            <input type="text" id="screen"> </p>
+            <input type="text" id="input"> </p>
         <p>
-             <button type="button" class="btn btn-warning active" onclick="factorial()">x!</button>
-            <button type="button" class="btn btn-warning active" onclick="inverse()">1/x</button>
-            <button type="button" class="btn btn-warning active" onclick="square()">x<sup>2</sup></button>
-             <button type="button" class="btn btn-warning active" onclick="squareRoot()">&#8730;x</button>
-            <button type="button" class="btn btn-primary active" onclick="cosineDegree()">cos degree</button>
+             <button type="button" class="btn btn-warning active" onclick="Calculator.factorial()">x!</button>
+            <button type="button" class="btn btn-warning active" onclick="Calculator.inverse()">1/x</button>
+            <button type="button" class="btn btn-warning active" onclick="Calculator.square()">x<sup>2</sup></button>
+             <button type="button" class="btn btn-warning active" onclick="Calculator.squareRoot()">&#8730;x</button>
+            <button type="button" class="btn btn-primary active" onclick="Calculator.cosineDegree()">cos degree</button>
             </p>
         <p>
-            <button type="button" class="btn btn-danger active" onclick="allClear()">AC</button>
-            <button type="button" class="btn btn-danger active" onclick="clears()">C</button>
-            <button type="button" class="btn btn-warning active" onclick="changeSign()">+/-</button>
-            <button type="button" class="btn btn-warning active" onclick="percentage()">%</button>
-            <button type="button" class="btn btn-primary active" onclick="cosineRadian()">cos radian</button>
+            <button type="button" class="btn btn-danger active" onclick="Calculator.allClear()">AC</button>
+            <button type="button" class="btn btn-danger active" onclick="Calculator.clears()">C</button>
+            <button type="button" class="btn btn-warning active" onclick="Calculator.changeSign()">+/-</button>
+            <button type="button" class="btn btn-warning active" onclick="Calculator.percentage()">%</button>
+            <button type="button" class="btn btn-primary active" onclick="Calculator.cosineRadian()">cos radian</button>
         </p>
         <p>
 
-            <button type="button" class="btn btn-info active" onclick="addDigit('7')">7</button>
-            <button type="button" class="btn btn-info active" onclick="addDigit('8')">8</button>
-            <button type="button" class="btn btn-info active" onclick="addDigit('9')">9</button>
-            <button type="button" class="btn btn-success active" onclick="storeOperator('*')">x</button>
-            <button type="button" class="btn btn-primary active" onclick="sinDegree()">sin degree</button>
+            <button type="button" class="btn btn-info active" onclick="Calculator.addDigit('7)">7</button>
+            <button type="button" class="btn btn-info active" onclick="Calculator.addDigit('8')">8</button>
+            <button type="button" class="btn btn-info active" onclick="Calculator.addDigit('9')">9</button>
+            <button type="button" class="btn btn-success active" onclick="Calculator.storeOperator('*')">x</button>
+            <button type="button" class="btn btn-primary active" onclick="Calculator.sinDegree()">sin degree</button>
         </p>
         <p>
-            <button type="button" class="btn btn-info active" onclick="addDigit('4')">4</button>
-            <button type="button" class="btn btn-info active" onclick="addDigit('5')">5</button>
-            <button type="button" class="btn btn-info active" onclick="addDigit('6')">6</button>
-            <button type="button" class="btn btn-success active" onclick="storeOperator('-')">-</button>
-            <button type="button" class="btn btn-primary active" onclick="sinRadian()">sin radian</button>
+            <button type="button" class="btn btn-info active" onclick="Calculator.addDigit('4')">4</button>
+            <button type="button" class="btn btn-info active" onclick="Calculator.addDigit('5')">5</button>
+            <button type="button" class="btn btn-info active" onclick="Calculator.addDigit('6')">6</button>
+            <button type="button" class="btn btn-success active" onclick="Calculator.storeOperator('-')">-</button>
+            <button type="button" class="btn btn-primary active" onclick="Calculator.sinRadian()">sin radian</button>
         </p>
         <p>
-            <button type="button" class="btn btn-info active" onclick="addDigit('1')">1</button>
-            <button type="button" class="btn btn-info active" onclick="addDigit('2')">2</button>
-            <button type="button" class="btn btn-info active" onclick="addDigit('3')">3</button>
-            <button type="button" class="btn btn-success active" onclick="storeOperator('+')">+</button>
-            <button type="button" class="btn btn-primary active" onclick="tangentDegree()">tan degree</button>
+            <button type="button" class="btn btn-info active" onclick="Calculator.addDigit('1')">1</button>
+            <button type="button" class="btn btn-info active" onclick="Calculator.addDigit('2')">2</button>
+            <button type="button" class="btn btn-info active" onclick="Calculator.addDigit('3')">3</button>
+            <button type="button" class="btn btn-success active" onclick="Calculator.storeOperator('+')">+</button>
+            <button type="button" class="btn btn-primary active" onclick="Calculator.tangentDegree()">tan degree</button>
         </p>
         <p>
-            <button type="button" class="btn btn-info active" onclick="addDigit('0')">0</button>
-            <button type="button" class="btn btn-success active" onclick="addDecimal()">.</button>
-            <button type="button" class="btn btn-success active" onclick="calculate()">=</button>
+            <button type="button" class="btn btn-info active" onclick="Calculator.addDigit('0')">0</button>
+            <button type="button" class="btn btn-success active" onclick="Calculator.addDecimal()">.</button>
+            <button type="button" class="btn btn-success active" onclick="Calculator.calculate()">=</button>
 
-            <button type="button" class="btn btn-success active" onclick="storeOperator('/')">/</button>
-            <button type="button" class="btn btn-primary active" onclick="tangentRadian()">tan radian</button>
+            <button type="button" class="btn btn-success active" onclick="Calculator.storeOperator('/')">/</button>
+            <button type="button" class="btn btn-primary active" onclick="Calculator.tangentRadian()">tan radian</button>
+
         </p>
     </form>
-    <script>
-    //var lenght = currentInput;
-       // currentInput.toPrecision(20);
-    </script>
+
 </body>
 </center>
 </html>
