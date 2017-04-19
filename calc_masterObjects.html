@@ -16,6 +16,9 @@
     <form>
         <p>
             <input type="text" id="input"> </p>
+        <script>
+        var calc = new Calculator();
+        </script>
         <p>
              <button type="button" class="btn btn-warning active" onclick="Calculator.factorial()">x!</button>
             <button type="button" class="btn btn-warning active" onclick="Calculator.inverse()">1/x</button>
@@ -24,7 +27,7 @@
             <button type="button" class="btn btn-primary active" onclick="Calculator.cosineDegree()">cos degree</button>
             </p>
         <p>
-            <button type="button" class="btn btn-danger active" onclick="Calculator.allClear()">AC</button>
+            <button type="button" class="btn btn-danger active" onclick="calc.allClear()">AC</button>
             <button type="button" class="btn btn-danger active" onclick="Calculator.clears()">C</button>
             <button type="button" class="btn btn-warning active" onclick="Calculator.changeSign()">+/-</button>
             <button type="button" class="btn btn-warning active" onclick="Calculator.percentage()">%</button>
@@ -32,7 +35,7 @@
         </p>
         <p>
 
-            <button type="button" class="btn btn-info active" onclick="Calculator.addDigit('7)">7</button>
+            <button type="button" class="btn btn-info active" onclick="calc.addDigit('7)">7</button>
             <button type="button" class="btn btn-info active" onclick="Calculator.addDigit('8')">8</button>
             <button type="button" class="btn btn-info active" onclick="Calculator.addDigit('9')">9</button>
             <button type="button" class="btn btn-success active" onclick="Calculator.storeOperator('*')">x</button>
@@ -46,7 +49,7 @@
             <button type="button" class="btn btn-primary active" onclick="Calculator.sinRadian()">sin radian</button>
         </p>
         <p>
-            <button type="button" class="btn btn-info active" onclick="Calculator.addDigit('1')">1</button>
+            <button type="button" class="btn btn-info active" onclick="calc.addDigit('1')">1</button>
             <button type="button" class="btn btn-info active" onclick="Calculator.addDigit('2')">2</button>
             <button type="button" class="btn btn-info active" onclick="Calculator.addDigit('3')">3</button>
             <button type="button" class="btn btn-success active" onclick="Calculator.storeOperator('+')">+</button>
