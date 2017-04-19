@@ -14,6 +14,7 @@ var calculator = {
     inputs: {
         oldInput: "0",
         currentInput: document.getElementById('inputId'),
+        radDeg: 0,
 
     },
 
@@ -24,17 +25,52 @@ var calculator = {
         subtract: 4
     },
 
+
+
     displayCurrentInput: function(inputId) {
         document.getElementById('inputId') = inputs.currentInput;
         console.log(inputs.currentInput);
     },
 
     allClear: function allClear() {
-        calculator.inputs.currentInput = "0";
-        calculator.operator.multiply = 0; //clear operator
-        calculator.inputs.oldInput = "0"; //clear memory
-        calculator.displayCurrentInput();
-}
+        this.inputs.currentInput = "0";
+        this.operator.multiply = 0; //clear operator
+        this.inputs.oldInput = "0"; //clear memory
+        this.displayCurrentInput();
+},
+
+    toggleRadDeg: function  (flag) { // flag in html button is a 1 for the deg button and a 0 for the rad button
+   this.input.radDeg = flag;
+        },
+
+        cosine: function() {
+        if ( this.input.radDeg == 0) {
+
+        }
+            else if (this.input.radDeg == 1) {
+
+            }
+        },
+
+    sine: function() {
+           if ( this.input.radDeg == 0) {
+
+        }
+            else if (this.input.radDeg == 1) {
+
+            }
+    },
+
+    tangent: function() {
+
+          if ( this.input.radDeg == 0) {
+
+        }
+            else if (this.input.radDeg == 1) {
+
+            }
+    },
+
 
 }
 
@@ -68,4 +104,6 @@ function addDigit(dig) {
     }
     this.displayCurrentInput();
 }
+
+
 
